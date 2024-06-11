@@ -1,0 +1,18 @@
+
+
+#heading1{
+    color:blue;
+}
+#heading2{
+    color:red;
+}
+#heading3{
+    color:green;
+}
+
+*{
+    color:yellow;
+}
+.Myclass{
+    color:purple;
+}
