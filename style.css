@@ -1,18 +1,30 @@
-
-
-#heading1{
-    color:blue;
+#box{
+    background-color: blue;
+    color:white;
 }
-#heading2{
+/* .heading{
+    background-color: yellow;
     color:red;
+
+} */
+ 
+#btn{
+    background-color: green;
+    color:white;
 }
-#heading3{
-    color:green;
+p{
+    text-align: justify;
 }
 
-*{
-    color:yellow;
+a{
+    text-decoration: none;
 }
-.Myclass{
-    color:purple;
+#h1{
+    font-weight:  150;;
+}
+#h2{
+    font-weight: 250;
+}
+#h3{
+    font-weight: 900;
 }
