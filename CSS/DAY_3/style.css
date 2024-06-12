@@ -1,0 +1,33 @@
+#p1{
+    background-color: blue;
+    color:white;
+    font-family:'Segoe UI';
+    font-weight: 500;
+}
+h1{
+    text-align:center;
+
+}
+#pone{
+    background-color: green;
+    color:white;
+    font-family: arial;
+    font-weight: 500;
+    font-size : 50px;
+}
+#p2{
+    background-color: red;
+    color:white;
+    font-family: arial;
+    font-weight: 500;
+    font-size :35px;
+}
+#p3{
+    background-color: yellow ;
+    color:black;
+    font-family: arial;
+    font-weight: 500;
+    font-size : 25px;
+    line-height: 50px;
+    text-transform: capitalize;
+}
