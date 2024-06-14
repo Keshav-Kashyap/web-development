@@ -1,0 +1,23 @@
+div{
+    
+    width: 100px;
+    height: 100px;
+    border-color: black;
+    background-color: pink;
+    border-width: 6px;
+    border-style: solid;
+
+   padding-left: 6px;
+
+
+}
+h1{
+    width: 100px;
+    height: 100PX;
+    background-color: blue;
+    color:white;
+    text-align: center;
+    text-decoration: underline;
+    border:5px dashed black;
+    border-radius: 25px;
+}
