@@ -1,0 +1,46 @@
+.navbar{
+    background-color: yellow;
+    display: flex;
+    justify-content:space-evenly;
+}
+a{
+    text-decoration: none;
+    color:black;
+    /* background-color: red; */
+}
+li{
+    list-style-type: none;
+    display: inline;
+}
+.outer{
+    height: 400px;
+    width: 400px;
+    background-color: yellow;
+    border: 2px black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    border: 2px black dotted;
+    
+}
+@media(width :600px) {
+    .inner{
+        background-color: black;
+    }
+
+}
+@media (max-width:600px ){
+    .inner{
+        background-color: red;
+    }
+}
+@media(min-width:200PX) and (max-width: 300px){
+    .inner{
+        background-color: black;
+    }
+}
