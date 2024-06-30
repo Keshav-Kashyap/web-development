@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <h1>Apply for Join</h1>
+    <form action="post">
+        <label for="username">Enter Your User Name</label>
+        <input type="text"  id="username" name="username" placeholder="Enter your user name" autofocus>
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+        </div>
+        <div>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subcribe keshav talk </label>
+        </div>
+        <div>
+            <label for="comment">Enter Feedback</label>
+            <br>
+            <textarea name="comment" id="comment" rows="4" cols="5" placeholder="Enter Your feedback"></textarea>
+        </div>
+        <div>
+            <select name="fruits" id="frut">
+                <option value="apple">Apple</option>
+                <option value="banana">banana</option>
+                <option value="Mango">Mango</option>
+            </select>
+        </div>
+
+    </form>
+</body>
+</html>
