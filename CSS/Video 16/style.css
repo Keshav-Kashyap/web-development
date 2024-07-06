@@ -1,0 +1,44 @@
+/* class Selctor? */
+.class{
+    background-color: aqua;
+    color:red;
+}
+/* id Selector */
+#id{
+    background-color: blue;
+    color: yellow;
+}
+/* Child Selector */
+div > p {
+    color: skyblue;
+    background-color: blue;
+}
+/* Descendant Selector */
+div p {
+    background-color: green;
+    color:blue;
+}
+/* Universal Selector */
+*{
+    background-color: blueviolet;
+    margin: 0%;
+    padding: 0%;
+}
+/* pseudo Selector */
+a:visited{
+    background-color: greenyellow;
+}
+a:link{
+    background-color: red;;
+}
+a:active{
+    background-color: purple;
+    color:yellow;
+}
+a:hover{
+    background-color: red;
+}
+p:first-child{
+    background-color: blue;
+        color:white;
+}
