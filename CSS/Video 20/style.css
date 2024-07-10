@@ -1,0 +1,9 @@
+p{
+    background-color: blue;
+    color: white;
+}
+
+div p:first-of-type{
+    background-color: yellow;
+    color: red;
+}
