@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    border: 2px solid black;
+    box-sizing: border-box;
+    width: 80vw;/* vw is used for  full view area puri screen par*/
+    margin: auto;/* auto ka matlb dono tarf se brar margin lagega*/
+    background-color: aquamarine;
+}
+.container{
+    border: 2px solid black;
+    box-sizing: border-box;
+    width: 80vw;/* vw is used for  full view area puri screen par*/
+    margin: 23px auto;/* auto ka matlb dono tarf se brar margin lagega*/
+    background-color: aquamarine;  
+}
