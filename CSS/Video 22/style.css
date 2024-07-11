@@ -6,6 +6,7 @@
     border: 2px solid black;
     box-sizing: border-box;
     width: 80vw;/* vw is used for  full view area puri screen par*/
+    height: 10vh;
     margin: auto;/* auto ka matlb dono tarf se brar margin lagega*/
     background-color: aquamarine;
 }
@@ -13,6 +14,7 @@
     border: 2px solid black;
     box-sizing: border-box;
     width: 80vw;/* vw is used for  full view area puri screen par*/
+    height: 80vh; /*ye bhi kuch kuch same hai par ye niche se full screen ke kaam main aata hai */
     margin: 23px auto;/* auto ka matlb dono tarf se brar margin lagega*/
     background-color: aquamarine;  
 }
