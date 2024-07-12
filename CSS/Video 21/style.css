@@ -1,0 +1,21 @@
+/* The specificity of this selector is 1 */
+h1{
+    background-color: aqua;
+}
+/* The specificity of this selector is 100 age important lga hai to */
+.red{
+    background-color: red /*!important*/ ;
+ /* !important sabse jaayadd important hai kiko css ya html iski hi sunte hai inline ki bhi iske aage nhi chalti hai. ye papa hai papa puri duniya ka papa  */
+}
+/* The specificity of this selector is 10 */
+h1.blue{
+    background-color: blue;
+}
+/* The specificity of this selector is 10 */
+.yellow{
+    background-color: yellow;
+}
+/* The specificity of this selector is 10 */
+/* [data-x=a]{
+    background-color: purple;
+} */ 
