@@ -14,7 +14,26 @@
     border: 2px solid black;
     box-sizing: border-box;
     width: 80vw;/* vw is used for  full view area puri screen par*/
-    height: 80vh; /*ye bhi kuch kuch same hai par ye niche se full screen ke kaam main aata hai */
-    margin: 23px auto;/* auto ka matlb dono tarf se brar margin lagega*/
-    background-color: aquamarine;  
+   /* height: 80vh; ye bhi kuch kuch same hai par ye niche se full screen ke kaam main aata hai */
+   min-height: 80vh;/* min hieght matlv mimmum height itni hogi or agr content badega to hidght apne aap adjust ho jaayege */
+   margin: 23px auto;/* auto ka matlb dono tarf se brar margin lagega*/
+    background-color: aquamarine; 
+    font-size: 18px; 
+}
+html{
+    font-size: 12px;
+}
+.container p{
+    font-size: 2rem;
+}}
+
+.mycont{
+    font-size: 22px;
+    width: 80vw;/*vh for computer and vw for phone
+    */
+    margin: 23px auto;
+    box-sizing: border-box;
+    color: blue;
+    border: 2px solid black;
+
 }
