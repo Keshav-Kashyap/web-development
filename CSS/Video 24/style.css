@@ -1,0 +1,13 @@
+.box{
+    border: 2px solid black;
+    padding: 35px;
+    box-shadow: 4px 9px 17px 0px blue;
+    text-shadow: 4px 4px 9px #393961;
+}
+.eln{
+    text-shadow: 4px 2px 5px blue;
+    outline: 2px solid blue;
+    outline-offset: 15px;
+    border: 2px solid black;
+    border-radius: 13px;
+}
