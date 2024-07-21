@@ -1,0 +1,9 @@
+nav ul li{
+    list-style: devanagari;
+    background-color: yellow;
+    list-style-position: inside;
+    border: 2px solid black;
+    /* list-style-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTATQV2mPgIgaPo-w_mdR-mIsTj-7HpcO368A&s); */
+    list-style: disc inside url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTATQV2mPgIgaPo-w_mdR-mIsTj-7HpcO368A&s);
+    /* list-style: none; */
+}
