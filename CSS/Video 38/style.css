@@ -1,0 +1,25 @@
+.container{
+border: 2px solid black;
+height: 80vh;
+display: flex;
+justify-content: center;
+align-items: center;
+/* flex-direction: column; */
+/* flex-wrap: wrap; */
+align-content: center;
+gap: 30px;
+row-gap: 50px;
+}
+.item{
+    /* flex-grow: 1; */
+    height: 92px;
+    width: 92px;
+    background-color: rgb(61, 61, 230);
+    border: 2px solid black;
+    /* margin: 2px; */
+}
+.item1 {
+    /* flex-grow: 12; */
+    /* flex-shrink: 2; */
+    align-self: flex-end;
+}
