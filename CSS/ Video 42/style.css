@@ -1,0 +1,24 @@
+.container {
+    border: 2px solid black;
+    height: 80vh;
+    width: 100vw;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+
+.box {
+    /* transform: rotate(0.25turn); */
+    /* transform: rotateX(40deg); */
+    /* transform: scale3d(4); */
+    /* transform: skew(5deg); */
+    /* transform: translateX(45px) skew(40deg) translateX(45px); */
+    transform: rotate(56deg);
+    transform-origin: 50% 50%;
+    display: flex;
+    justify-content: center;
+    border: 2px solid rgb(128, 128, 5);
+    height: 50px;
+    width: 50px;
+    background-color: beige;
+}
