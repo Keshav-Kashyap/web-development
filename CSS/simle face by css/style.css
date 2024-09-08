@@ -1,0 +1,34 @@
+
+.container{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    padding: 5px;
+}
+.parent{
+    background-color: yellow;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+.eye{
+    background-color: black;
+    height: 27px;
+    width: 27px;
+   border-radius: 100%;
+   
+}
+.eye1{
+    transform: translateX(120px) translateY(42px);
+}
+.eye2{
+    transform: translateX(52px) translateY(15px);
+}
+.mth{
+    background-color: red;
+    height: 30px;
+    width: 80px;
+    transform: translateX(57px) translateY(60px);
+    border-radius: 0px 0px 50px 50px;
+}
