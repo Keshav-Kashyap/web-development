@@ -1,0 +1,36 @@
+.container{
+    height: 80vh;
+    width: 70vw;
+    background-color: orange;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    animation: bounceX 3s linear infinite ,
+     bounceY 1s ease-out infinite alternate;
+
+}   
+@keyframes bounceX {
+    from{
+        left : 0;
+    }
+    to{
+       left:100%;
+        
+    }
+
+}
+@keyframes bounceY{
+    from{
+        bottom: 0;
+    }
+    to{
+        bottom: 100%;
+    }
+}
