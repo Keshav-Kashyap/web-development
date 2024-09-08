@@ -1,22 +1,23 @@
-*{
-    padding: 0;
-    margin: 0;
-}   
-.container{
-    height: 200px;
-    width: 200px;
-    /* background-color: aliceblue; */
-    border-radius: 50%;
-   border:40px solid rgb(211, 208, 208);
-   border-top: 40px solid rgb(116, 116, 33);
-   animation: keshav 2s linear 0s infinite normal  ;
-
+.box{
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+    /* animation-name: keshav;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite ;
+    animation-direction: normal; */
+    animation: keshav2 2s ease-in-out 1s infinite ;
 }
-@keyframes keshav{
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
+@keyframes keshav {
+    from{ font-size: 20px;}
+    to{ font-size:40px}
+}
+@keyframes keshav2{
+    0%{background-color: green;}
+    50%{background-color: pink;}
+    80%{ background-color: blue;}
+    100%{background-color: yellow;}
+
 }
