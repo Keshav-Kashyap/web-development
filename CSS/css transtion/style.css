@@ -1,0 +1,12 @@
+div{
+    height: 300px;
+    width: 300px;
+    background-color: yellow;
+    border: 2px solid black;
+    transition: all 1s ease-in-out 1s;
+    box-shadow: 200px 10px 100px green;
+
+}
+div:hover{
+    background-color: blue;
+}
