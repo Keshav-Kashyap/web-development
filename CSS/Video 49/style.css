@@ -1,0 +1,18 @@
+.container{
+    height: 400px;
+    width: 500px;
+    border: 2px solid black;
+    background-image: url("https://t3.ftcdn.net/jpg/06/48/79/10/360_F_648791013_cQK30SdyiLrVQ96Bqn2MOkz4JmvgttGr.jpg");
+    background-position: top right;
+    background-size: cover;
+    
+
+}
+/* img{
+    height: 400px;
+    width: 500px;  */
+    /* object-fit: cover;  */
+    /* object-fit: contain; */
+    /* object-fit: fill;
+    object-position: bottom right;
+} */
