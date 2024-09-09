@@ -1,18 +1,129 @@
-*{
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
     margin: 0;
     padding: 0;
+    font-family: "Poppins", sans-serif;
 }
-.nav{
-    background-color: bisque;
+
+
+body{
+    background-color: black;
 }
-ul{
-    display:  flex;
-   
+.main {
+    background-image: url("assets/bg.jpg");
+    height: 70vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+
 }
-ul li{
-    list-style: none;
-    padding: 22px;
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.69;
+    background-color: black;
+    position: absolute;
+    top: 0;
 }
-.container{
-    background-color: rgb(143, 139, 132);
+
+nav {
+    /* background-color: red; */
+    height: 62px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 80vw;
+}
+
+nav img {
+    width: 115px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100% - 62px);
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding:  0px 30px;
+
+
+}
+
+.hero> :nth-child(1) {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-weight: bolder;
+    font-size: 48px;
+    Line-height: 50px;
+    /* width: 400px; */
+    text-align: center;
+}
+
+
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+.sepration{
+    height: 7px;
+    background-color: rgb(46, 45, 45);
+}
+.btn{
+padding: 3px 8px;
+font-weight: 500;
+background-color: white;
+
+}
+.btn-red{
+background-color: red;
+color: white;
+padding: 3px 24px;
+font-size: 20px;
+border-radius: 4px;
+
+}
+.btn-red-sm{
+    background-color: red;
+    color: white;
+}
+.main input {
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: rgba(23,23,23,0.85); 
+    border: 1px solid rgba(246 ,238 ,238, 0.5);
+}
+.main input::placeholder{
+    font-size: 13px;
+    color: rgb(201, 198, 198);
+
 }
