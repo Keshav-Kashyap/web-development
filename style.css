@@ -1,45 +1,275 @@
-.container{
-background-color: rgb(17, 80, 80);
-height: 80vh;
-width: 30vw;
+@font-face{
+    font-family: 'myfont';
+    src: url('assetes/GFF-Latin-Bold.ttf') format('truetype');
 }
-.box{
+@font-face{
+    font-family: 'myfont2';
+    src: url('assetes/GFF-Latin-Regular.ttf') format('truetype');
+}
+* {
+    padding: 0;
+    margin: 0;
+   overflow-x: hidden;
+ 
+}
 
-    width: 34px;
+.container{
+    position: relative;
+     width: 100vw;
+     height: 140vh;
+     background-image: url("https://dl.dir.freefiremobile.com/common/web_event/official2.ff.garena.all/20248/06bbaa2c9707c761311dc5b76082b5d8.jpg");
+    background-size: cover; /* Image ko zoom karke full screen karne ke liye */
+    background-repeat: no-repeat;
+    background-position: center; /* Center se zoom hone ke liye */
+    object-fit: cover; /* Image ko crop karne ke liye */
+    animation: slideUp 1.5s ease-out forwards;
+}   
+
+@keyframes slideUp {
+    from{
+        transform: translateY(0);
+    }
+    to {    
+        transform: translateY(-30px);
+    }
+}
+
+
+
+
+.nav {
     height: 45px;
+    width: 93vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav img {
+    width: 130px;
+
+}
+
+.navbar {
+    height: 45px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.svgs {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+
+    top: 300px;
   
-    /* animation-name: keshav;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(0.38, 0.25, 0, 1.11);;
-animation-direction: alternate-reverse;
-animation-play-state: paused; */
-animation: keshav 3s ease-in-out 1s 1 backwards, keshav2 3s ease-in-out 1;
 }
-@keyframes keshav { 
-    From{
-background-color: red;
+
+.home-images {
+    width: 95vw;
+    height: 200px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+   
+    animation: slideUp-fade 1s ease-out forwards,fade-in 1s ease-out forwards;
+ 
+}
+@keyframes slideUp-fade {
+    from{
+        transform: translateY(0);
+       
     }
-    to{
-        background-color: aqua;
-        /* transform: translateX(1000px); */
+    to {    
+        transform: translateY(-40px);
+        
     }
 }
-@keyframes keshav2 {
-    0%{
-transform: rotate(100deg);
-    }
-    20%{
-        transform: rotate(200deg);
-    }
-    50%{
-        transform: rotate(220deg);
-    }
-    80%{
-        transform: rotate(300deg);
-    }
-    100%{
-        transform: rotate(310deg);
-    }
+@keyframes fade-in {
+    0%{ opacity: 0;}
+    50%{ opacity: 0.5;}
+    100%{ opacity: 1;}
+}
+
+.home-images :first-child {
+    width: 43vw;
+   
     
 }
+
+.home-images :nth-child(2) {
+    width: 200px;
+    
+ 
+}
+.page-container{
+    margin-top: 40px;
+}
+
+.home-news-container> div{
+    width: 100vw;
+    height: 900px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+   
+}
+
+.home-news{
+    width: 960px;
+    /* background-color: pink; */
+    z-index: 100;
+    height: 500px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+   
+
+}
+.latest-news{
+    /* background-color: red; */
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.photos{
+    /* background-color: pink; */
+    height: 290px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start ;
+   overflow: hidden;
+    gap: 12px;
+    
+}
+.latest-news div{
+  
+    height: 150px;
+    width: 200px;
+   overflow: hidden;
+    
+}
+.latest-txt{
+    font-size: 48px;
+    font-family: 'myfont', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+ gap: 12PX;
+   
+}
+.photos-div{
+    background-color: white;
+    height: 290px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    overflow: hidden;
+    
+}
+
+.photos-div-images{
+    height: 400px;
+    width: 100%;
+   background-color: red;
+   background-size: contain;
+  overflow: hidden;
+  object-position: center;
+    background-repeat: no-repeat;
+}
+.photos-div-images img{
+    width: 100%; /* Image will take the full width of the div */
+    height: 100%; /* Image will cover the height of the div */
+    object-fit: cover; /* Ensures the image covers the div while maintaining aspect ratio */
+    object-position: center; /* Centers the image */
+}
+
+
+
+
+
+.photos-div-text{
+    height: 180px;
+    width: 350px;
+    /* background-color: blueviolet; */
+    font-family: 'myfont', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    overflow: hidden;
+    color: #0009;
+
+}
+.ylw{
+    color: yellow;
+    margin-left: 15px;
+}
+.photos-div-text :nth-child(3){
+    margin-left: 15px;
+}
+.patch-notes{
+    font-family: 'myfont2',sans-serif;
+    font-size: 25px;
+    font-weight: 550;
+    font-style: normal;
+    margin-top: 4px;
+    color: #000;
+}
+
+@media screen and (max-width : 800px){
+
+
+.home-images{
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+}
+@media screen and (max-width : 450px){
+
+
+    .home-images{
+        
+        width: 85vw;
+    }
+    
+    /* .home-images :first-child {
+        width: 250px;
+       
+        
+    } */
+    
+    }
+    .diff{
+position: relative;
+    }
