@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+background-color: black;
+}
+.nav{
+    background-color: black;
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+svg{
+    background-color: white;
+}
