@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char binary1[100], binary2[100], result[101];
+    int i, carry = 0, sum;
+
+    // Input two binary numbers as strings
+    printf("Enter first binary number: ");
+    scanf("%s", binary1);
+    printf("Enter second binary number: ");
+    scanf("%s", binary2);
+
+    // Find the length of the binary numbers
+    int len1 = strlen(binary1);
+    int len2 = strlen(binary2);
+    int maxLen = (len1 > len2) ? len1 : len2;
+
+    // Initialize result to 0
+    result[maxLen] = '\0';
+
+    // Add binary numbers from right to left
+    for (i = 0; i < maxLen; i++) {
+        int bit1 = (len1 - 1 - i >= 0) ? binary1[len1 - 1 - i] - '0' : 0;
+        int bit2 = (len2 - 1 - i >= 0) ? binary2[len2 - 1 - i] - '0' : 0;
+
+        sum = bit1 + bit2 + carry;
+        result[maxLen - 1 - i] = (sum % 2) + '0';
+        carry = sum / 2;
+    }
+
+    // If there's a carry left, shift result and add the carry at the beginning
+    if (carry) {
+        printf("Sum: 1%s\n", result);
+    } else {
+        printf("Sum: %s\n", result);
+    }
+
+    return 0;
+}
