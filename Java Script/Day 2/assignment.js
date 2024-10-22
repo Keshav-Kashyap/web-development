@@ -1,0 +1,14 @@
+let a,b;
+a=2,b=3; 
+a+=b;
+console.log(a);
+a-=b;
+console.log(a);
+a*=b;
+console.log(a);
+a/=b;  
+console.log(a);
+a%=b;
+console.log(a);
+a**=b;
+console.log(a);
