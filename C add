@@ -13,7 +13,7 @@ int main() {
     // Adding the numbers
     sum = num1 + num2;
 
-    // Displaying the result
+   
     printf("Sum = %d\n", sum);
 
     return 0;
