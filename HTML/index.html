@@ -1,48 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive Notes Download</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body>
-<header>
-     <h1>My Protfolio </h1>
-</header>
-    <main>
-            <section>
-                Education : RBS MANGMENT TECHNICAL CAMPUS 
-            </section>
-            <section>
-                Exprince : Fresher
-            </section>
-            <article> My Story: I'm Belongs to india</article>
-            <p> I am also avilable on :</p>
-            <br>
-            <a href = " https://www.google.co.in" target="_main" > <img src = " https://th.bing.com/th/id/R.7e557f1c0864829c54c300d15bee69f4?rik=fjZN1AYH30vXIw&riu=http%3a%2f%2fpngimg.com%2fuploads%2fgoogle%2fgoogle_PNG19635.png&ehk=ZmsumEtoeJQhKoUzQTZO2TEbYPBu0%2b7EFdjmJ3qljls%3d&risl=&pid=ImgRaw&r=0" alt="Google"  height = "40"> </a>
-            <br>
-            <a href="https://www.facebook.com/" target="_main"> <img src = " https://th.bing.com/th/id/OIP.cOz92GK9w_2_VxUIWBL0ngHaHa?rs=1&pid=ImgDetMain" alt="Facebook" height="29">  </a>
-            <br>
-            <a href="https://www.instagram.com/editkeshav?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_main"> <img src = "https://th.bing.com/th/id/OIP.izOOxDyHFwihHcQcKIExmQAAAA?rs=1&pid=ImgDetMain" alt="Instagram" height="30"> </a>
-            <br>
-            <a href = " https://www.youtube.com/@ZenithCrew-os9ph" target="_main"><img src = " https://th.bing.com/th/id/OIP.gXDAsM3eyXW3wlU8IMGrfgAAAA?rs=1&pid=ImgDetMain" alt="Youtube" height="40"> </a>
-            <div> 
-            <p> Hello Word</p>
-            <p> HIi</p>
-            <p> Namste </p>
-            </div>
-            <div>
-                <p> Byy </p>
-                <p> Good BYY </p>
-                <p> Cioa </p>
 
-            </div>
-            <span> 
-                Byyy
-            </span>
-    </main>
-<footer> 
-    <h5> Contact me at talkwithgamers@gmail.com</h5>
-</footer>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://png.pngtree.com/png-clipart/20190630/original/pngtree-vector-notes-icon-png-image_4152569.jpg"
+                alt="Logo">
+            Keshav
+        </div>
+
+
+        <div class="menu">
+            <a href="#" class="home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#help">Help</a>
+            <a href="#theme" id="theme-toggler" class="move-right">
+                <i class="fa-solid fa-sun"></i> </a>
+
+
+
+        </div>
+
+
+
+        <button class="menu-toggle" id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+    </nav>
+
+    <!-- Side Panel for Mobile -->
+    <div class="side-panel" id="side-panel">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#help">Help</a>
+        <a href=""> Change Theme </a>
+        <a href="#theme" id="theme-toggler-2" class="chg-theme" class="move-right">
+          <i class="fa-solid fa-sun"></i> </a>
+    </div>
+
+    <div class="container">
+        <h1>My Notes</h1>
+        <div class="notes" id="notes-list">
+            <!-- Notes will be dynamically added here -->
+        </div>
+    </div>
+
+    <footer>
+        <p>Email: example@mail.com | Phone: 123-456-7890</p>
+        <p>© 2024 Your Company. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
