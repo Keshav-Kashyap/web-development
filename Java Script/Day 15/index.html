@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        img{
+            height: 500px;
+        
+        }
+        .edit{
+            background: royalblue;
+            color: white;
+            border: none;
+            height: 50px;
+            width: 50px;
+        border-radius: none;
+        }
+        .edit:hover{
+            background-color: blue;
+        }
+        .new-edit{
+            background-color: green;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+        }
+        .new-edit:hover{
+            background-color: yellow;
+        }
+
+        
+    </style>
+    <script>
+        function change() {
+            let img=document.querySelector('img');
+            
+            let button =document.getElementsByTagName("button")[0];
+
+            if(img.getAttribute("src")==="https://images.pexels.com/photos/260024/pexels-photo-260024.jpeg")
+        {
+            img.setAttribute("src","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZCSVC9TQbjjPH4yA5f5uzHk43Byyrx3DkKg&s")
+
+            button.innerHTML="Go to chess";
+            // button.style.backgroundColor="green"
+            // button.classList.add("new-edit");
+            // button.classList.remove("edit");
+            button.classList.toggle("new-edit");
+            
+        }else{
+
+            img.setAttribute("src","https://images.pexels.com/photos/260024/pexels-photo-260024.jpeg")
+
+        button.innerHTML="Go to ludo";
+        //  button.style.backgroundColor="royalblue";
+        // button.classList.add("edit");
+        // button.classList.remove("new-edit");
+        // button.classList.add("edit");
+        button.classList.toggle("new-edit");
+        }
+    }
+    </script>
+</head>
+<body>
+    <img id="img" src="https://images.pexels.com/photos/260024/pexels-photo-260024.jpeg" alt="chess">
+    <button class="edit" onclick="change()">Go to ludo </button>
+    
+</body>
+</html> 
